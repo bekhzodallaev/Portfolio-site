@@ -1,0 +1,28 @@
+
+.projects_wrapper{
+    /* display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items:start; */
+    /* height: calc(100vh - 5rem); */
+    padding: 3rem 10rem 0rem;
+}
+
+.projects_container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.image_container {
+    width: 450px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image_container img {
+    width: 100%;
+    object-fit: cover;
+}
+.project p {
+    color: #4c749a;
+}
