@@ -13,7 +13,7 @@ function Projects() {
       <div className={styles.projects_container}>
         <div className={styles.project}>
           <div className={styles.image_container}>
-            <a href="https://bekhzodallaev.github.io/getty-images/" target='_blank'>
+            <a href="https://bekhzodallaev.github.io/getty-images/" target='_blank' rel='noreferrer' >
               <img src={gettyImages} alt="" />
             </a>
           </div>
@@ -23,7 +23,7 @@ function Projects() {
         
         <div className={styles.project}>
           <div className={styles.image_container}>
-            <a href="https://github.com/bekhzodallaev/Music-App" target='_blank'>
+            <a href="https://github.com/bekhzodallaev/Music-App" target='_blank' rel='noreferrer'>
             <img src={music} alt="" />
             </a>
           </div>
@@ -33,7 +33,7 @@ function Projects() {
         
         <div className={styles.project}>
           <div className={styles.image_container}>
-            <a href="https://github.com/bekhzodallaev/Task-Manager" target='_blank'>
+            <a href="https://github.com/bekhzodallaev/Task-Manager" target='_blank' rel='noreferrer'>
             <img src={taskManager} alt="" />
             </a>
           </div>
@@ -43,7 +43,7 @@ function Projects() {
         
         <div className={styles.project}>
           <div className={styles.image_container}>
-            <a href="https://github.com/bekhzodallaev/Task-Manager" target='_blank'>
+            <a href="https://github.com/bekhzodallaev/Tenzie-game" target='_blank' rel='noreferrer'>
             <img src={tenzie} alt="" />
             </a>
           </div>

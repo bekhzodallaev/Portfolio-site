@@ -1,0 +1,40 @@
+[
+  {
+    "id":"1",
+    "date": "2025-06-01",
+    "topic_type": "Technical Tutorials",
+    "title": "Building a REST API with Node.js and Express",
+    "short_description": "Step-by-step guide on how to build a REST API using Node.js and Express framework.",
+    "post_content": "In this tutorial, we will build a REST API from scratch using Node.js and Express. We begin by initializing the project with npm, installing Express, and setting up basic routes. Then, we implement CRUD operations, integrate MongoDB for data storage, and handle error responses. We'll also add middleware for input validation, authentication using JWT, and environment variables for configuration. Finally, we deploy the API using a cloud platform like Render or Railway and perform post-deployment testing.",
+    "image": "https://miro.medium.com/v2/resize:fit:923/1*_9SnIxRyD5nCdqMMK4lXQQ.png"
+  },
+{
+    "id":"2",
+    "date": "2025-06-03",
+    "topic_type": "System Design",
+    "title": "Designing a Scalable URL Shortener",
+    "short_description": "A complete system design explanation for building a scalable URL shortening service like Bitly.",
+    "post_content": "Designing a scalable URL shortener involves breaking down components such as APIs, databases, hash algorithms, and scalability considerations. We use Base62 encoding for generating short URLs, Redis or Memcached for caching, and a relational or NoSQL database for persistence. To handle high traffic, we use load balancers, distributed databases, horizontal scaling, and eventual consistency. Monitoring, logging, and failover mechanisms are essential for production readiness.",
+    "image": "https://www.bulkgate.com/wp-content/uploads/2022/05/blog-url-shortener.jpg"
+  },
+  {  
+    "id":"3",
+    "date": "2025-06-05",
+    "topic_type": "Career Growth",
+    "title": "How to Ace Your Software Engineering Interview",
+    "short_description": "Practical tips and resources for succeeding in software engineering interviews.",
+    "post_content": "Preparing for software engineering interviews requires mastering data structures, algorithms, system design, and behavioral questions. Practice platforms like LeetCode, HackerRank, and CodeSignal are helpful. System design requires knowledge of distributed systems, scalability, and trade-offs. Behavioral questions focus on your problem-solving approach, teamwork, and communication. Regular mock interviews, good resume preparation, and staying calm during interviews are key to success.",
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20240425152126/SoftwareEngineeringInterviewQuestionsAnswers.png"
+  },
+  {  
+    
+  
+    "id":"4",
+    "date": "2025-06-07",
+    "topic_type": "Tech Comparisons",
+    "title": "React vs Angular vs Vue: Which One to Choose?",
+    "short_description": "A detailed comparison of popular front-end frameworks to help you make the right choice.",
+    "post_content": "React, Angular, and Vue are leading front-end frameworks. React offers flexibility, a component-based architecture, and a huge ecosystem, but requires third-party libraries for routing and state management. Angular provides a full-fledged framework with built-in tools but has a steeper learning curve. Vue offers simplicity, clear documentation, and reactive data binding, making it easy for beginners. The choice depends on project requirements, team experience, and long-term maintainability.",
+    "image": "https://www.capitalnumbers.com/blog/wp-content/uploads/2024/05/Angular__React__and_Vue.js-Front-end_Framework_Comparison.png"
+  }
+]
