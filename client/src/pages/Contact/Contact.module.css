@@ -1,0 +1,70 @@
+
+.contact_wrapper {
+        padding: 3rem 10rem 3rem;
+}
+.contact_wrapper form input{
+    display: block;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+    margin-top: 0.5rem;
+}
+.contact_wrapper form{
+    padding: 1rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; 
+    border-radius: 10px; 
+
+}
+textarea{
+    border-radius: 10px;
+    display: block;
+     outline: none;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+    resize: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+}
+.submit_btn{
+    outline: none;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+    font-size: 16px;
+    cursor:pointer;
+}
+.contact_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content:  center;
+}
+.contact_links a {
+    display: flex;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+    text-decoration: none;
+    gap: 1rem;
+    color:#359EFF;
+}
+.contact_links a img{
+  width: 25px;
+  object-fit: cover;
+
+}
+.contact_links a span{
+    display: block;
+}
