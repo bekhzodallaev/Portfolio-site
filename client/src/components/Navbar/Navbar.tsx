@@ -3,6 +3,7 @@ import styles from './Navbar.module.css'
 import codingLogo from '../../assets/coding.png';
 import { NavLink} from 'react-router-dom';
 import profilePicture from '../../assets/Profile.jpg'
+
 function Navbar() {
   return (
       <div className={styles.navbar_wrapper}>
@@ -69,7 +70,7 @@ function Navbar() {
 </li>
 
 < li className={styles.download_btn}>
-  <a href="/assets/Bekhzod_Resume.pdf" className={styles.link_styles} download>
+  <a href="../../assets/BekhzodAllaevCV0.pdf" className={styles.link_styles} download>
     Download CV
   </a>
 </li>
