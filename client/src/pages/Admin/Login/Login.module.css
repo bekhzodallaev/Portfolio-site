@@ -1,0 +1,33 @@
+
+.login_wrapper{
+    padding: 3rem 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_wrapper input {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+     margin-top: 0.5rem;
+     font-size: 1rem;
+     width: 400px;
+}
+
+.login_wrapper button {
+    outline: none;
+    background-color:#0b80ee;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.login_wrapper label {
+    font-size: 1.2rem;
+}

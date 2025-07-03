@@ -21,3 +21,4 @@ declare module '*.eot';
 declare module '*.mp4';
 declare module '*.webm';
 declare module '*.json';
+declare module '*.pdf';

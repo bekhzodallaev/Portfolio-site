@@ -1,11 +1,11 @@
-import React from 'react'
 import styles from './Blogs.module.css'
 import posts from '../../static/posts.json'
 import leftArrow from '../../assets/blogs/arrow.png'
 import rightArrow from '../../assets/blogs/right.png'
-
+import { Link } from 'react-router-dom'
 
 function Blogs() {
+
   return (
     <div className={styles.blogs_wrapper}>
       <h1>Blog Posts</h1>
@@ -28,7 +28,8 @@ function Blogs() {
               </div>
               <h2>{post.title}</h2>
               <p>{post.short_description}</p>
-              <button className={styles.details_btn}>Read more...</button>
+              <Link to={`/blog/${post.id}`} className={styles.details_btn}>Read more...
+              </Link>
          </div>
           ))
         }
