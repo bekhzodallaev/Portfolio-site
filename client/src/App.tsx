@@ -9,6 +9,7 @@ import Projects from './pages/Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import PostDetails from './pages/PostDetails/PostDetails';
 import Login from './pages/Admin/Login/Login';
+import PostList from './pages/Admin/PostList/PostList';
 function App() {
   return (
   <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='/blog/:id' element={<PostDetails />} />
         <Route path='/admin/login' element={<Login />} />
+        < Route path='/admin/post-list' element={<PostList />} />
       </Routes>
     </div>
   );
