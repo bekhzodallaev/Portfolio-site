@@ -17,7 +17,6 @@ The site showcases my skills, projects, blog posts, and allows visitors to conta
 - **Blog**: My technical posts and tutorials, with interactive code examples  
 - **Contact**: Contact form for visitors to send me messages  
 - **Download CV**: Downloadable PDF of my resume  
-- **Admin functionality** (optional): Secure blog post creation and editing  
 - **Code Runner** (optional): Execute code examples in blog posts (using Piston API or sandbox)
 
 ---
