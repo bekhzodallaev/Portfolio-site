@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  client:
+    build:
+     context: ./client
+     dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"   # keep client dev server on 3000
+    environment:
+      - REACT_APP_API_URL=http://server:5000
+    volumes:
+      - ./client:/app        # mount local client code
+      - /app/node_modules    # prevent node_modules overwrite
+    command: npm start       # hot reload
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app        # mount local server code
+      - /app/node_modules
+    command: npm run dev     # run nodemon for hot reload

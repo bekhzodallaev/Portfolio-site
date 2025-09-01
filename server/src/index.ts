@@ -1,12 +1,14 @@
 import express from "express";
 import cors from "cors";
-import contactRoutes from "./routes/contact-message"; // ✅ default import
+import contactRoutes from "./routes/contact-message";
+import postsRoute from "./routes/posts";
 
 const app = express();
-console.log(contactRoutes);
+
 app.use(cors());
 app.use(express.json());
-app.use("/", contactRoutes); // ✅ this is now a router, not a function
+app.use("/", contactRoutes); 
+app.use("/api/posts", postsRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

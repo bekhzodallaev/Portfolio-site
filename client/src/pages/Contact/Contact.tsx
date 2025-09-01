@@ -15,7 +15,7 @@ function Contact() {
       message: ''
     }
   );
-
+   
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<any | null>(null);
 
@@ -25,13 +25,15 @@ function Contact() {
       [e.target.name]:e.target.value
     }))
   }
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoading(true);
     setStatus(null);
   
     try {
-      const res = await fetch('http://localhost:5000', {
+      const res = await fetch(`${API_URL}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

@@ -1,0 +1,27 @@
+
+
+.postlist_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.postlist_wrapper ul li {
+   list-style: none;
+   min-width: 400px;
+
+}
+ .link {
+  display: flex;              /* flex container */
+  flex-direction: row;         /* default, optional */
+  justify-content: space-between; /* title left, date right */
+  align-items: center;         /* vertical alignment */
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid #241616;
+  width: 100%;
+}
+
+.link p {
+  margin: 0;                  /* remove default <p> margin */
+}
