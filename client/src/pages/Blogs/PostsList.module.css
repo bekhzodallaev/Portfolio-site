@@ -9,7 +9,8 @@
 .postlist_wrapper ul li {
    list-style: none;
    min-width: 400px;
-
+   color: #0b80ee;
+   margin-bottom: 1rem;
 }
  .link {
   display: flex;              /* flex container */
@@ -20,8 +21,10 @@
   padding: 10px;
   border-bottom: 2px solid #241616;
   width: 100%;
+
 }
 
 .link p {
-  margin: 0;                  /* remove default <p> margin */
+  margin: 0;    
+ color: #0b80ee;
 }

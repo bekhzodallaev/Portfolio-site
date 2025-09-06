@@ -85,7 +85,7 @@ function Contact() {
             <img src={githubLogo} alt="" />
             <span>Github</span>
           </a>
-          <a href="https://t.me/icebreaker0210" target='_blank' rel="noopener">
+          <a href="https://t.me/webdevdaily" target='_blank' rel="noopener">
             <img src={telegramLogo} alt="" />
             <span>Telegram</span>
           </a>

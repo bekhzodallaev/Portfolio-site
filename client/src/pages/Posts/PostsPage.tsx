@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import Posts from "./Posts";
+import styles from "./Posts.module.css"
 
 interface PostData {
   slug: string;
@@ -32,7 +33,7 @@ function PostsPage() {
   if (!post) return <p>Post not found</p>;
 
   return (
-    <div>
+    <div className={styles.postpage_container}>
       <Link to="/blog">← Back to all posts</Link>
       <Posts content={post.content} metadata={post.metadata} />
     </div>
