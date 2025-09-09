@@ -1,0 +1,10 @@
+# render.yaml
+
+static_sites:
+  - name: my-react-frontend
+    branch: main                  # The GitHub branch to deploy from
+    build_command: npm install && npm run build
+    publish_dir: build            # CRA build output folder
+    rewrites:
+      - source: /*
+        destination: /index.html
