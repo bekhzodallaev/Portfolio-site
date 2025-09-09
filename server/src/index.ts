@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/", contactRoutes); 
+app.use("/api/contact", contactRoutes); 
 app.use("/api/posts", postsRoute);
 
 const PORT = process.env.PORT || 5000;
