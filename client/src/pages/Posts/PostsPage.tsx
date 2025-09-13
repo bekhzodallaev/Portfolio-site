@@ -16,7 +16,7 @@ function PostsPage() {
 
   useEffect(() => {
     async function fetchPost() {
-      const res = await fetch(`http://localhost:5000/api/posts/${slug}`);
+      const res = await fetch(`https://portfolio-site-k7n9.onrender.com/api/posts/${slug}`);
       if (!res.ok) {
         setPost(null);
       } else {
