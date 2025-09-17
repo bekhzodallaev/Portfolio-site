@@ -14,7 +14,7 @@ function Navbar() {
               <h2>Bekhzod Allaev</h2>
           </div> 
           <nav>
-        <ul>
+        <ul className={styles.navlink_container}>
           <li>
   <NavLink
     to="/"
