@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './Navbar.module.css'
 import codingLogo from '../../assets/coding.png';
 import { NavLink} from 'react-router-dom';
 import profilePicture from '../../assets/Profile.jpg'
 
 function Navbar() {
+
+  const [toggle, setToggle] = useState(false);
+  
   return (
       <div className={styles.navbar_wrapper}>
           <div className={styles.navbar_name}>
@@ -14,7 +17,7 @@ function Navbar() {
               <h2>Bekhzod Allaev</h2>
           </div> 
           <nav>
-        <ul className={styles.navlink_container}>
+        <ul className={`${styles.navlink_container} ${toggle ? styles.active : ''}`}>
           <li>
   <NavLink
     to="/"
@@ -77,9 +80,19 @@ function Navbar() {
               </ul>
               <div className={styles.profile_picture}>
                   <img src={profilePicture} alt="profile picture" />
-              </div>
+        </div>
+        <div className={styles.hamburger_container} >
+          <input type="checkbox" id='menu_checkbox' className={styles.menu_checkbox}
+            checked={toggle}
+            onChange={() => setToggle(prev => !prev)}
+          />
+          <label htmlFor="menu_checkbox">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+       </div>
           </nav>
-
     </div>
   )
 }
