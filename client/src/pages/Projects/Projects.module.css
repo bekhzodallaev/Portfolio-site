@@ -28,3 +28,25 @@
 .project p {
     color: #4c749a;
 }
+
+@media screen and (max-width:480px) {
+    
+    .projects_wrapper {
+        padding: 1rem;
+    }
+    .projects_container{
+        flex-direction: column;
+        gap: none;
+    }
+    .projects_wrapper h1 {
+        font-size: 24px;
+
+
+    }
+    .image_container {
+        width: 100%;
+    }
+    .project:hover{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+}
