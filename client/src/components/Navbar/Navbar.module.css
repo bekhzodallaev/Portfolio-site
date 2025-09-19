@@ -137,7 +137,7 @@ label div:last-child {
 }
 
 
-@media  screen and (max-width:480px) {
+@media  screen and (max-width:660px) {
 
   .hamburger_container{
   display: block;
