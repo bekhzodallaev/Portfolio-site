@@ -86,7 +86,7 @@ function Navbar() {
             checked={toggle}
             onChange={() => setToggle(prev => !prev)}
           />
-          <label htmlFor="menu_checkbox">
+          <label htmlFor="menu_checkbox" className={styles.nav_label}>
             <div></div>
             <div></div>
             <div></div>

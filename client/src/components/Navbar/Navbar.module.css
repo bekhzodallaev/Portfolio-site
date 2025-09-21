@@ -88,7 +88,7 @@ nav ul li {
   display: none;
 }
 
-label {
+.nav_label {
   top: 50%;
   right: 0;
   left: 0;
@@ -101,7 +101,7 @@ label {
   cursor: pointer;
 }
 
-label div {
+.nav_label div {
   width: 4px;
   height: 4px;
   background-color: #143240;
@@ -112,15 +112,15 @@ label div {
     0.3s ease background-color;
 }
 
-label div:first-child {
+.nav_label div:first-child {
   width: 18px;
 }
 
-label div:nth-child(2) {
+.nav_label div:nth-child(2) {
   width: 13px;
 }
 
-label div:last-child {
+.nav_label div:last-child {
   width: 25px;
   margin-bottom: 0;
 }
