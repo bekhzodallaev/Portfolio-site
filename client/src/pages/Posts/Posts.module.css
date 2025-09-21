@@ -3,3 +3,13 @@
     padding: 3rem 10rem 3rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+@media screen and (max-width:480px) {
+    
+    .postpage_container {
+        padding: 1rem;
+    }
+    .posts_container h1{
+      font-size: 24px;
+    }
+}
