@@ -48,5 +48,10 @@
     }
     .project:hover{
         box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        border-radius: 10px;
     }
+    .project p, .project h3{
+        margin: 1rem;
+    }
+
 }
