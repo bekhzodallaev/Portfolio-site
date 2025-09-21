@@ -68,3 +68,31 @@ textarea{
 .contact_links a span{
     display: block;
 }
+
+@media screen and (max-width:480px) {
+    
+    .contact_wrapper {
+        padding: 1rem;
+
+    }
+    .contact_wrapper h1 {
+        font-size: 24px;
+    }
+    .contact_body form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_body form label {
+        text-align: left;
+    }
+    .contact_body {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+    .contact_links {
+        flex-wrap: wrap;
+        flex-direction: unset;
+        justify-content: left;
+    }
+}
