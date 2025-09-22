@@ -10,25 +10,15 @@ function Navbar() {
   
   return (
       <div className={styles.navbar_wrapper}>
-          <div className={styles.navbar_name}>
-              <div className={styles.parent_logo}>
-               <img src={codingLogo} alt="Coding Logo" className={styles.codingLogo} />
-              </div>
-              <h2>Bekhzod Allaev</h2>
-          </div> 
+          <NavLink to="/" className={styles.navbar_name}>
+            <div className={styles.parent_logo}>
+           <img src={codingLogo} alt="Coding Logo" className={styles.codingLogo} />
+            </div>
+           <h2>Bekhzod Allaev</h2>
+          </NavLink>
+
           <nav>
         <ul className={`${styles.navlink_container} ${toggle ? styles.active : ''}`}>
-          <li>
-  <NavLink
-    to="/"
-    className={({ isActive }) =>
-      `${styles.link_styles} ${isActive ? styles.active_link : ''}`
-    }
-  >
-    Home
-  </NavLink>
-</li>
-
 <li>
   <NavLink
     to="/about"

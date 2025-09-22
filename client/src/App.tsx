@@ -9,6 +9,7 @@ import Projects from './pages/Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import PostsPage from './pages/Posts/PostsPage';
 
+
 function App() {
   return (
   <div className="App">
