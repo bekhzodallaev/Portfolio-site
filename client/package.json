@@ -17,6 +17,7 @@
     "@types/jest": "^27.5.2",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
+    "framer-motion": "^12.23.20",
     "front-matter": "^4.0.2",
     "gray-matter": "^4.0.3",
     "prop-types": "^15.8.1",

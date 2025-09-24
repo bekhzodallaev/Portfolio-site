@@ -1,7 +1,13 @@
 
 .about_wrapper {
-    /* height: calc(100vh - 5rem); */
-    padding: 3rem 10rem 3rem;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 2rem;
 }
 .skills_container {
     display: flex;
@@ -24,13 +30,14 @@
 .technologies_container{
     display: flex;
     gap: 2rem;
-
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 .technologies_container .tech_type{
     display: flex;
     gap: 1rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    padding: 0.5rem 1.5rem; 
+    padding: 0rem 1rem; 
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -38,6 +45,34 @@
 }
 .tech_type div img {
     width: 25px;
+}
+.intern_photo, .warsaw42{
+    width: 500px; 
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.warsaw42 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intern_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.comment {
+    text-align: center;
+    color: gray;
+
+}
+.tech_text{
+    font-weight: 500;
 }
 
 @media  screen and (max-width:480px) {

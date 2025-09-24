@@ -1,10 +1,5 @@
 import React from 'react'
 import styles from './About.module.css'
-import devIcon from '../../assets/skills/code .png'
-import collabIcon from '../../assets/skills/collaboration.png'
-import databaseIcon from '../../assets/skills/database.png'
-import debugIcon from '../../assets/skills/debug.png'
-import serverIcon from '../../assets/skills/servers.png'
 import typescriptIcon from "../../assets/technologies/typescript.png"
 import reactIcon  from "../../assets/technologies/react.png"
 import gitIcon  from "../../assets/technologies/git.png"
@@ -13,46 +8,47 @@ import dockerIcon  from "../../assets/technologies/docker.png"
 import expressIcon from '../../assets/technologies/express.png'
 import nestIcon from '../../assets/technologies/nestjs.png'
 import nodeIcon from '../../assets/technologies/nodejs.png'
-  
+import internXperi from "../../assets/intern-xperi.jpg"
+import student42 from "../../assets/Student-42.jpg";
+import Footer from '../../components/Footer/Footer';
+import {motion} from "framer-motion"
 function About() {
   return (
-    <div className={styles.about_wrapper}>
+     <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+        <div className={styles.about_wrapper}>
       <h1>About Me</h1>
-      <p>I’m a software engineer with a passion for building robust and scalable web applications. My background
-        in computer science and software development allows me to approach problems from a holistic perspective,
-        ensuring that the solutions I develop are both efficient and maintainable. I’m proficient in a variety
-        of programming languages and frameworks, and I’m always eager to learn new technologies and stay
-        up-to-date with the latest industry trends.
+      <p>My name is Bekhzod, a self-taught software engineer from Uzbekistan, currently living in Warsaw, Poland.
+        I started as a self-learner at the student dormitory, diving into JavaScript and web
+        development. Over time, I expanded my skills to include modern
+        frameworks, backend development, and database management. Every project
+        is an opportunity to learn something new and push my limits.
       </p>
-      <h1>Skills</h1>
-      <div className={styles.skills_container}>
-        <div className={styles.skill}>
-          <img src={devIcon} alt="" />
-          <h3>Full-stack Development</h3>
-          <p>Building end-to-end web applications</p>
-        </div>
-          <div className={styles.skill}>
-          <img src={databaseIcon} alt="" />
-          <h3>Database Management</h3>
-          <p>Designing and managing databases</p>
-        </div>
-          <div className={styles.skill}>
-          <img src={serverIcon} alt="" />
-          <h3>Debugging and Testing</h3>
-          <p>Identifying and resolving software issues</p>
-        </div>
-          <div className={styles.skill}>
-          <img src={debugIcon} alt="" />
-          <h3>System Design</h3>
-          <p>Desiging scalable and reliable systems</p>
-        </div>
-          <div className={styles.skill}>
-          <img src={collabIcon} alt="" />
-          <h3>Collaboration</h3>
-          <p>Working effectively in teams</p>
-        </div>
+      <p>I got my first commercial experience as a web engineer intern at <strong> Xperi Inc</strong> after five months of learning web development. Since then, I have worked at different companies, gaining as much experience as possible. </p>
+      <div className={styles.intern_photo}>
+         <img src={internXperi} alt="Internship at Xperi Photo" className={styles.intern_photo} />
       </div>
-      <h1>Technologies</h1>
+      <p className={styles.comment}>My first day at Xperi as a Web Engineer Intern</p>
+
+      <p>
+       To further strengthen my skills, I joined <strong>42 Warsaw</strong> — an innovative peer-to-peer programming school where I worked on real-world coding projects and learned through collaboration and problem-solving. This experience expanded my knowledge, sharpened my problem-solving skills, and taught me how to approach challenges with creativity and discipline.
+      </p>
+      <div className={styles.warsaw42}>
+        <img src={student42} alt="42 Warsaw Photo" />
+      </div>
+      <p className={styles.comment}>Graduation day at 42 as a Piscine student</p>
+       <p>
+        Currently, I focus on building responsive and scalable applications
+        using React, Node.js, and Typescript. I enjoy creating solutions that
+        are both efficient and enjoyable for users, while keeping code clean
+        and maintainable.
+      </p>
+      <p className={styles.tech_text}>
+  Here are some of the key technologies I enjoy working with and continue to explore:
+</p>
       <div className={styles.technologies_container}>
         <div className={styles.tech_type}>
           <div>
@@ -102,8 +98,11 @@ function About() {
           <p>Nest.js</p>
         </div>
 
-        </div>
+      </div>
+      <Footer />
     </div>
+
+    </motion.div>
   )
 }
 

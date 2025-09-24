@@ -3,28 +3,34 @@ import styles from './Home.module.css';
 import ProfileImage from '../../assets/Profile.jpg'
 import { ReactTyped } from 'react-typed';
 import { NavLink } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-      <div className={styles.home_wrapper}>
-      <div className={styles.left_side}>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate = {{y:0, opacity:1}}
+      transition ={{ duration:0.6, ease:"easeOut"}}
+    >
+      
+       <div className={styles.home_wrapper}>
+      <div className={styles.parent_wrapper}>
+          <div className={styles.left_side}>
         <img src={ProfileImage} alt="main_image" className={styles.main_image} />
       </div>
       <div className={styles.right_side}>
-        <h1>
-          <ReactTyped
-            strings={[
-            "Hi! I'm Bekhzod, a Software Engineer"
-            ]}
-            typeSpeed={100}
-            showCursor
-          />
-        </h1>
-        <h1></h1>
-        <p>I'm dedicated to crafting clean and efficient code that brings ideas to life. Let's build something amazing together!</p>
-       <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank'>View My Work</a>
+        <p> Bekhzod Allaev </p>
+        <p> Software Engineer</p>
       </div>
+        </div>
+       <q>I'm dedicated to crafting clean and efficient code that brings ideas to life.</q>
+        <div className={styles.links_container}>
+          <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank'>View My Work</a>
+          <NavLink to="/about" className={styles.btn}> About Me </NavLink>
+          <NavLink to="/blog" className={styles.btn}>Read Blog </NavLink>
+        </div>
     </div> 
+     </motion.div>
   )
 }
 export default Home

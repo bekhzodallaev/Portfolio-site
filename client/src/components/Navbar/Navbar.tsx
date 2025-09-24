@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styles from './Navbar.module.css'
 import codingLogo from '../../assets/coding.png';
 import { NavLink} from 'react-router-dom';
-import profilePicture from '../../assets/Profile.jpg'
+import downloadIcon from '../../assets/file_download.svg'
 
 function Navbar() {
 
@@ -63,14 +63,13 @@ function Navbar() {
 </li>
 
 < li className={styles.download_btn}>
-  <a href="/assets/BekhzodAllaevCV0.pdf" className={styles.link_styles} download>
-    Download CV
+            <a href="/assets/BekhzodAllaevCV0.pdf" className={styles.link_styles} download>
+              <p>Resume</p>
+            <img src={downloadIcon} alt="" />
+              
   </a>
 </li>
               </ul>
-              <div className={styles.profile_picture}>
-                  <img src={profilePicture} alt="profile picture" />
-        </div>
         <div className={styles.hamburger_container} >
           <input type="checkbox" id='menu_checkbox' className={styles.menu_checkbox}
             checked={toggle}

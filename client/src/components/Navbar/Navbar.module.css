@@ -1,9 +1,8 @@
 .navbar_wrapper {
   display: flex;
   height: 5rem;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  padding: 0rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
               rgba(0, 0, 0, 0.24) 0px 1px 2px;
   
@@ -11,6 +10,7 @@
   top: 0;
   z-index: 1000;
   background-color:#fff;
+  padding: 0 5rem;
 }
 
 .navbar_name {
@@ -51,37 +51,33 @@ nav ul li {
   list-style-type: none;
 }
 
-.download_btn{
-    background-color: #0b80ee;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    a{
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-    }
+
+.download_btn a {
+  color: #0000009f;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
 }
+.download_btn a p {
+  border-bottom: 2px solid;
+}
+.download_btn a img{
+  width: 25px;
+  height: 25px;
+}
+
 .link_styles {
   text-decoration: none;
+  color: #0000009f;
+}
+.link_styles:hover {
   color: #000;
 }
 
 .active_link {
   color: #0b80ee;
 }
-
-.profile_picture {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.profile_picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 
 .hamburger_container{
   display: none;
@@ -150,9 +146,6 @@ nav ul li {
 
   .navbar_name h2{
     font-size: 16px;
-  }
-  .profile_picture {
-    display: none;
   }
   
   .navlink_container{
