@@ -1,21 +1,26 @@
 
 .projects_wrapper{
-    /* display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items:start; */
-    /* height: calc(100vh - 5rem); */
-    padding: 3rem 10rem 3rem;
-}
+     max-width: 1040px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 18px;
+     margin-top: 2rem;
+    }
 
 .projects_container {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    width: 100%;
     flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
 
 .image_container {
-    width: 450px;
+    width: 400px;
     height: 200px;
     border-radius: 20px;
     overflow: hidden;
@@ -23,10 +28,15 @@
 
 .image_container img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .project p {
     color: #4c749a;
+    font-size: 1rem;
+}
+.project {
+    width: 400px;
 }
 
 @media screen and (max-width:480px) {

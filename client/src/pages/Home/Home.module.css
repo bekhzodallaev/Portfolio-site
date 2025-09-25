@@ -1,15 +1,15 @@
 
 
 .home_wrapper {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
-    align-items:start;
-    height: calc(100vh - 5rem);
+    max-width: 1080px;
+    min-height: calc(100vh - 8rem);
+    margin: 0 auto;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 5rem 10rem;
-
+    margin-top: 2rem;
 }
 .parent_wrapper{
     display: flex;

@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Home.module.css';
 import ProfileImage from '../../assets/Profile.jpg'
-import { ReactTyped } from 'react-typed';
 import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 

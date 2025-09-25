@@ -4,9 +4,16 @@ import gettyImages from '../../assets/projects/gettyimages.jpg'
 import music from '../../assets/projects/music.jpg'
 import taskManager from '../../assets/projects/taskmanager.jpg'
 import tenzie from '../../assets/projects/tenzie.jpg'
+import { motion } from "framer-motion"
+import Footer from '../../components/Footer/Footer'
 
 function Projects() {
   return (
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate = {{y:0, opacity:1}}
+      transition ={{ duration:0.6, ease:"easeOut"}}
+    >
     <div className={styles.projects_wrapper}>
       <h1>Projects</h1>
       <p>A curated selection of my recent work, highlighting my expertise in software development</p>
@@ -28,7 +35,7 @@ function Projects() {
             </a>
           </div>
           <h3>Music App</h3>
-          <p>Music app allows you upload music and listen.Lets make your music listening more enjoyable</p>
+          <p>Music app allows you upload music and listen.</p>
         </div>
         
         <div className={styles.project}>
@@ -50,8 +57,10 @@ function Projects() {
           <h3>Tenzie Game</h3>
           <p>Tenzie Game creates an exciting atmosphere to spend your quality time.Lets try and see how it works</p>
            </div>
-      </div>
-    </div>
+        </div>
+        <Footer />
+        </div>
+    </motion.div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./PostsList.module.css";
-
+import { motion } from "framer-motion"
 
 interface PostMeta {
   slug: string;
@@ -23,10 +23,25 @@ function PostsList() {
     fetchPosts();
   }, []);
 
-  if (loading) return <p>Loading posts...</p>;
-
+if (loading) {
   return (
     <div className={styles.postlist_wrapper}>
+      <h1>All Blogs</h1>
+      <ul>
+        {[...Array(5)].map((_, i) => (
+          <li key={i} className={styles.skeleton}></li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+  return (
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+       <div className={styles.postlist_wrapper}>
       <h1>All Blogs</h1>
       <ul>
         {posts.map((post) => (
@@ -40,6 +55,7 @@ function PostsList() {
         ))}
       </ul>
     </div>
+     </motion.div>
   );
 }
 

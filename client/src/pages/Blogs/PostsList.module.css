@@ -12,6 +12,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 .postlist_wrapper ul li {
    list-style: none;
@@ -19,7 +22,6 @@
    color: #0b80ee;
    margin-bottom: 1rem;
 
-   
 }
  .link {
   display: flex;              /* flex container */
@@ -38,6 +40,21 @@
 .link p {
   margin: 0;    
  color: #0b80ee;
+}
+
+/* Skeleton style */
+.skeleton {
+  height: 40px;
+  background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 
