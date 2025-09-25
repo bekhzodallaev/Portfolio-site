@@ -5,6 +5,9 @@ import instagramLogo from "../../assets/contact/instagram.png"
 import telegramLogo from "../../assets/contact/telegram.png"
 import linkedinLogo from "../../assets/contact/linkedin.png"
 import githubLogo from "../../assets/contact/github.png"
+import { motion } from "framer-motion"
+import Footer from '../../components/Footer/Footer'
+
 
 function Contact() {
 
@@ -55,7 +58,12 @@ function Contact() {
     }
   }
   return (
-    <div className={styles.contact_wrapper}>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <div className={styles.contact_wrapper}>
       <h1>Get in Touch</h1>
       <p>I'm always open to discussing new projects, creative ideas,
         or just a friendly chat. Feel free to reach out, and I'll get back to you as soon as possible.
@@ -94,8 +102,10 @@ function Contact() {
             <span>Instagram</span>
           </a>
         </div>
-     </div>
+        </div>
+        <Footer />
     </div>
+    </motion.div>
   )
 }
 

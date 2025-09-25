@@ -1,6 +1,16 @@
 
 .contact_wrapper {
-        padding: 3rem 10rem 3rem;
+    max-width: 1040px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 18px;
+    
+}
+.contact_wrapper h1 {
+    text-align: center;
 }
 .contact_wrapper form input{
     display: block;
@@ -11,11 +21,13 @@
     border: none;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
     margin-top: 0.5rem;
+    
 }
 .contact_wrapper form{
     padding: 1rem;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; 
     border-radius: 10px; 
+    margin-top: 2rem;
 
 }
 textarea{
