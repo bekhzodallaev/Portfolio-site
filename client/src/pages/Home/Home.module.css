@@ -2,7 +2,7 @@
 
 .home_wrapper {
     gap: 2rem;
-    max-width: 1080px;
+    max-width: 1040px;
     min-height: calc(100vh - 8rem);
     margin: 0 auto;
     display: flex;

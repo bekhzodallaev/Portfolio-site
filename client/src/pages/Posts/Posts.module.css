@@ -1,6 +1,6 @@
 
 .postpage_container{
-    width: 1040px;
+    max-width: 1040px;
     margin: 2rem auto;
     display: flex;
     justify-content: center;

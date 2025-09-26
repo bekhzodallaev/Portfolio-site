@@ -24,8 +24,7 @@ function About() {
       <p>My name is Bekhzod, a self-taught software engineer from Uzbekistan, currently living in Warsaw, Poland.
         I started as a self-learner at the student dormitory, diving into JavaScript and web
         development. Over time, I expanded my skills to include modern
-        frameworks, backend development, and database management. Every project
-        is an opportunity to learn something new and push my limits.
+        frameworks, backend development, and database management.
       </p>
       <p>I got my first commercial experience as a web engineer intern at <strong> Xperi Inc</strong> after five months of learning web development. Since then, I have worked at different companies, gaining as much experience as possible. </p>
       <div className={styles.intern_photo}>
