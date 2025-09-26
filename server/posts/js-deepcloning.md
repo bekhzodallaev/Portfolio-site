@@ -3,8 +3,6 @@ title: "Deep Cloning in JavaScript"
 date: "2025-07-05"
 ---
 
-# Deep Cloning in JavaScript — JSON vs StructuredClone
-
 I used to struggle to understand deep cloning in JavaScript objects. Yes, we always say *“use `JSON.stringify()` + `JSON.parse()`, `structuredClone()`, or some recursive functions”* — but when asked in an interview, we often cannot answer clearly about the difference and end up scratching our heads.  
 
 I also had similar situations, but then I learned them deeply. Here is what I’ve found:  

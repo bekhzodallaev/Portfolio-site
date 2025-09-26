@@ -1,9 +1,7 @@
 ---
-title: "JavaScript Memory Management"
+title: "JavaScript Memory Management - Lessons from C"
 date: "2025-06-12"
 ---
-
-# JavaScript Memory Management — Lessons from C
 
 While writing code in C for some time, I was tired of cleaning the memory each time to avoid memory leaks in my program. For someone who used to write code in dynamically typed, high-level languages like JavaScript, it was a real headache. Then, I decided to learn deeply how JavaScript is handling this issue.
 

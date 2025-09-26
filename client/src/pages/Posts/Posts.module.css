@@ -1,7 +1,33 @@
 
 .postpage_container{
-    padding: 3rem 10rem 3rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    width: 1040px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link_wrappper {
+    border-radius:10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;  
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+}
+.post_links {
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 0rem;
+    font-size: 18px;
+
+}
+.post_links a {
+    text-decoration: none;
+    color: #0b80ee;
+
+}
+.post_links a:hover{
+    color: #12538f;
 }
 
 @media screen and (max-width:480px) {

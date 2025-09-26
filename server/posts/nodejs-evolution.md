@@ -3,8 +3,6 @@ title: "Why Tech Giants Moved to Node.js"
 date: "2025-06-20"
 ---
 
-# Why Tech Giants Moved to Node.js
-
 Did you know that a lot of tech giants (Netflix, PayPal, even LinkedIn) moved to Node.js (which is not even a language) to transform their technology stacks? Yes, you heard it right!  
 
 Here is the story for each:  
