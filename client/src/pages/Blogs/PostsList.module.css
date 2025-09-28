@@ -72,6 +72,7 @@
 }
 .postlist_wrapper ul li {
   width: 100%;
+  min-width: unset;
 }
 
 .postlist_wrapper h1 {

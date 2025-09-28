@@ -72,6 +72,9 @@ textarea{
     gap: 1rem;
     color:#359EFF;
 }
+.contact_links a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .contact_links a img{
   width: 25px;
   object-fit: cover;

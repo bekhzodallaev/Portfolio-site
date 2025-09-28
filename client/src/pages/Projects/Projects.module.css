@@ -63,5 +63,8 @@
     .project p, .project h3{
         margin: 1rem;
     }
+    .project {
+        width: 100%;
+    }
 
 }

@@ -38,4 +38,7 @@
     .posts_container h1{
       font-size: 24px;
     }
+    .post_links {
+        font-size: 1rem;
+    }
 }
