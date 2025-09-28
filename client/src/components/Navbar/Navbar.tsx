@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import styles from './Navbar.module.css'
 import codingLogo from '../../assets/coding.png';
 import { NavLink} from 'react-router-dom';
@@ -7,6 +7,26 @@ import downloadIcon from '../../assets/file_download.svg'
 function Navbar() {
 
   const [toggle, setToggle] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event:MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setToggle(false);
+       }
+    }
+    
+    if (toggle) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+
+  }, [toggle])
+
+  const handleClickOutside = () => setToggle(false);
   
   return (
       <div className={styles.navbar_wrapper}>
@@ -14,10 +34,10 @@ function Navbar() {
             <div className={styles.parent_logo}>
            <img src={codingLogo} alt="Coding Logo" className={styles.codingLogo} />
             </div>
-           <h2>Bekhzod Allaev</h2>
+        <h2>Bekhzod Allaev</h2>
           </NavLink>
 
-          <nav>
+          <nav ref={menuRef}>
         <ul className={`${styles.navlink_container} ${toggle ? styles.active : ''}`}>
 <li>
   <NavLink
@@ -25,6 +45,7 @@ function Navbar() {
     className={({ isActive }) =>
       `${styles.link_styles} ${isActive ? styles.active_link : ''}`
     }
+              onClick={handleClickOutside}
   >
     About
   </NavLink>
@@ -36,6 +57,9 @@ function Navbar() {
     className={({ isActive }) =>
        `${styles.link_styles} ${isActive ? styles.active_link : ''}`
     }
+              onClick={handleClickOutside}
+
+              
   >
     Projects
   </NavLink>
@@ -47,6 +71,8 @@ function Navbar() {
     className={({ isActive }) =>
        `${styles.link_styles} ${isActive ? styles.active_link : ''}`
     }
+              onClick={handleClickOutside}
+
   >
     Blog
   </NavLink>
@@ -57,6 +83,8 @@ function Navbar() {
     to="/contact"
      className={({ isActive }) =>`${styles.link_styles} ${isActive ? styles.active_link : ''}`
     }
+           onClick={handleClickOutside}
+
   >
     Contact
   </NavLink>

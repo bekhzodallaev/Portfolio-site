@@ -145,6 +145,11 @@ nav ul li {
   .hamburger_container{
   display: block;
 }
+.navbar_wrapper {
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items:center;
+}
 
   .navbar_name h2{
     font-size: 16px;
@@ -158,7 +163,8 @@ nav ul li {
     top: 2rem;
     right: 0;
     background-color: #000000b0;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    align-items: start;
   }
   .navlink_container li a {
     color: #fff;
@@ -167,6 +173,14 @@ nav ul li {
   .navlink_container.active {
     display: flex;
   }
+  .download_btn img {
+    display: none;
+  }
+  .download_btn p{
+    color: #4094e2;
+  }
+  .download_btn a {
+    font-size: 16px;
+  }
 
-   
 }
