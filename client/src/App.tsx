@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
@@ -8,13 +8,14 @@ import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import PostsPage from './pages/Posts/PostsPage';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-  <div className="App">
+  <div className={styles.App}>
       <Navbar /> {/* Include Navbar at the top level */}
-      <Routes>
+      <main>
+         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
@@ -22,6 +23,8 @@ function App() {
         <Route path="/blog" element={<Blogs />} />
         <Route path='/blog/:slug' element={<PostsPage/>} />
       </Routes>
+        </main>
+      <Footer />
     </div>
   );
 }

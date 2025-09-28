@@ -6,7 +6,6 @@ import telegramLogo from "../../assets/contact/telegram.png"
 import linkedinLogo from "../../assets/contact/linkedin.png"
 import githubLogo from "../../assets/contact/github.png"
 import { motion } from "framer-motion"
-import Footer from '../../components/Footer/Footer'
 
 
 function Contact() {
@@ -103,7 +102,6 @@ function Contact() {
           </a>
         </div>
         </div>
-        <Footer />
     </div>
     </motion.div>
   )

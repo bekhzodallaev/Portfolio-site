@@ -5,7 +5,6 @@ import music from '../../assets/projects/music.jpg'
 import taskManager from '../../assets/projects/taskmanager.jpg'
 import tenzie from '../../assets/projects/tenzie.jpg'
 import { motion } from "framer-motion"
-import Footer from '../../components/Footer/Footer'
 
 function Projects() {
   return (
@@ -58,7 +57,6 @@ function Projects() {
           <p>Tenzie Game creates an exciting atmosphere to spend your quality time.Lets try and see how it works</p>
            </div>
         </div>
-        <Footer />
         </div>
     </motion.div>
   )

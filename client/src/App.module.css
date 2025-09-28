@@ -1,0 +1,15 @@
+body {
+ font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.App {
+  min-height: 100vh;       /* full viewport height */
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+}
+
+main {
+  flex: 1;                 /* expand to push footer down */
+}

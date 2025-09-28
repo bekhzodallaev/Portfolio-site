@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import Posts from "./Posts";
 import styles from "./Posts.module.css"
 import telegramGif from "../../assets/blogs/icons8-telegram.gif"
-import Footer from "../../components/Footer/Footer";
 
 interface PostData {
   slug: string;
@@ -78,7 +77,6 @@ function PostsPage() {
           <span />
         )}
       </div>
-      <Footer />
     </div>
   );
 }

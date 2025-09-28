@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./PostsList.module.css";
 import { motion } from "framer-motion"
-import Footer from "../../components/Footer/Footer";
 
 interface PostMeta {
   slug: string;
@@ -55,7 +54,6 @@ if (loading) {
           
         ))}
         </ul>
-        <Footer />
     </div>
      </motion.div>
   );

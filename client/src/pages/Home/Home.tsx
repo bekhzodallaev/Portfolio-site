@@ -3,7 +3,6 @@ import styles from './Home.module.css';
 import ProfileImage from '../../assets/Profile.jpg'
 import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
-import Footer from '../../components/Footer/Footer';
 
 function Home() {
   return (
@@ -29,7 +28,6 @@ function Home() {
           <NavLink to="/about" className={styles.btn}> About Me </NavLink>
           <NavLink to="/blog" className={styles.btn}>Read Blog </NavLink>
         </div>
-      <Footer />
     </div> 
      </motion.div>
   )

@@ -10,8 +10,8 @@ import nestIcon from '../../assets/technologies/nestjs.png'
 import nodeIcon from '../../assets/technologies/nodejs.png'
 import internXperi from "../../assets/intern-xperi.jpg"
 import student42 from "../../assets/Student-42.jpg";
-import Footer from '../../components/Footer/Footer';
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
+
 function About() {
   return (
      <motion.div
@@ -98,7 +98,6 @@ function About() {
         </div>
 
       </div>
-      <Footer />
     </div>
 
     </motion.div>
