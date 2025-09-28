@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import ProfileImage from '../../assets/Profile.jpg'
 import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   return (
@@ -24,10 +25,11 @@ function Home() {
         </div>
        <q>I'm dedicated to crafting clean and efficient code that brings ideas to life.</q>
         <div className={styles.links_container}>
-          <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank'>View My Work</a>
+          <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank'> My Work</a>
           <NavLink to="/about" className={styles.btn}> About Me </NavLink>
           <NavLink to="/blog" className={styles.btn}>Read Blog </NavLink>
         </div>
+      <Footer />
     </div> 
      </motion.div>
   )
