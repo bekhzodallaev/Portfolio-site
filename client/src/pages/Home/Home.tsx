@@ -15,7 +15,7 @@ function Home() {
        <div className={styles.home_wrapper}>
       <div className={styles.parent_wrapper}>
           <div className={styles.left_side}>
-        <img src={ProfileImage} alt="main_image" className={styles.main_image} />
+        <img src={ProfileImage} alt="Profile" className={styles.main_image} />
       </div>
       <div className={styles.right_side}>
         <p> Bekhzod Allaev </p>
@@ -24,7 +24,7 @@ function Home() {
         </div>
        <q>I'm dedicated to crafting clean and efficient code that brings ideas to life.</q>
         <div className={styles.links_container}>
-          <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank'> My Work</a>
+          <a href="https://github.com/bekhzodallaev" className={styles.btn} target='_blank' rel="noreferrer noopener"> My Work</a>
           <NavLink to="/about" className={styles.btn}> About Me </NavLink>
           <NavLink to="/blog" className={styles.btn}>Read Blog </NavLink>
         </div>

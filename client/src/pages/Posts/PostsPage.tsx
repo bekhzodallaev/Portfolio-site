@@ -58,7 +58,7 @@ function PostsPage() {
       <div className={styles.link_wrappper}>
         <p>I am also writing articles, tutorials and some tech-related stuff here on my channel
         </p>
-        <a href="https://t.me/webdevdaily"  target='_blank' rel="noopener">
+        <a href="https://t.me/webdevdaily"  target='_blank' rel="noreferrer noopener">
          <img src={telegramGif} alt="Telegram Gif" />
         </a>
       </div>

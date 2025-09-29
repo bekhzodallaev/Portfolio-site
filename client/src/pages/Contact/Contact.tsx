@@ -70,34 +70,34 @@ function Contact() {
       <div className={styles.contact_body}>
          <form onSubmit={handleSubmit}>
          <label htmlFor="name"> Full Name</label><br/>
-        <input type="text" id="name" name="name" placeholder='Your name' required value={formData.name} rel="noreferrer"  onChange={handleChange}/><br></br>
+        <input type="text" id="name" name="name" placeholder='Your name' required value={formData.name} rel="noreferrer noopener "  onChange={handleChange}/><br></br>
           
         <label htmlFor="email">Email</label><br/>
-          <input type="email" id="email" name="email" placeholder='Your email' required value={formData.email} rel="noreferrer" onChange={handleChange}
+          <input type="email" id="email" name="email" placeholder='Your email' required value={formData.email} rel="noreferrer noopener" onChange={handleChange}
           /><br></br>
           
         <label htmlFor="message">Message</label><br/>       
-        <textarea name="message" id="message" rows={10} cols={50} required value={formData.message} rel="noreferrer" onChange={handleChange}></textarea>
+        <textarea name="message" id="message" rows={10} cols={50} required value={formData.message} rel="noreferrer noopener" onChange={handleChange}></textarea>
           <button className={styles.submit_btn} disabled={loading}>
             {loading ? "Sending..." : "Send Message"}
           </button>
           {status && <p style={{ marginTop: '1rem' }}>{status}</p>}
         </form>
         <div className={styles.contact_links}>
-          <a href="https://www.linkedin.com/in/bekallaev/" target='_blank' rel="noopener">
-            <img src={linkedinLogo} alt="" />
+          <a href="https://www.linkedin.com/in/bekallaev/" target='_blank' rel="noreferrer noopener">
+            <img src={linkedinLogo} alt="Linkedin logo" />
             <span>Linkedin</span>
           </a>
-          <a href="https://github.com/bekhzodallaev/" target='_blank' rel="noopener">
-            <img src={githubLogo} alt="" />
+          <a href="https://github.com/bekhzodallaev/" target='_blank' rel="noreferrer noopener">
+            <img src={githubLogo} alt="Github logo" />
             <span>Github</span>
           </a>
-          <a href="https://t.me/webdevdaily" target='_blank' rel="noopener">
-            <img src={telegramLogo} alt="" />
+          <a href="https://t.me/webdevdaily" target='_blank' rel="noreferrer noopener">
+            <img src={telegramLogo} alt="Telegram logo" />
             <span>Telegram</span>
           </a>
-           <a href="https://www.instagram.com/behzodallaev/" target='_blank' rel="noopener">
-            <img src={instagramLogo} alt="" />
+           <a href="https://www.instagram.com/behzodallaev/" target='_blank' rel="noreferrer noopener">
+            <img src={instagramLogo} alt="Instagram logo" />
             <span>Instagram</span>
           </a>
         </div>

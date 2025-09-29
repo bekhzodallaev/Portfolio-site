@@ -28,7 +28,7 @@ function About() {
       </p>
       <p>I got my first commercial experience as a web engineer intern at <strong> Xperi Inc</strong> after five months of learning web development. Since then, I have worked at different companies, gaining as much experience as possible. </p>
       <div className={styles.intern_photo}>
-         <img src={internXperi} alt="Internship at Xperi Photo" className={styles.intern_photo} />
+         <img src={internXperi} alt="Internship at Xperi" className={styles.intern_photo} />
       </div>
       <p className={styles.comment}>My first day at Xperi as a Web Engineer Intern</p>
 
@@ -36,7 +36,7 @@ function About() {
        To further strengthen my skills, I joined <strong>42 Warsaw</strong> — an innovative peer-to-peer programming school where I worked on real-world coding projects and learned through collaboration and problem-solving. This experience expanded my knowledge, sharpened my problem-solving skills, and taught me how to approach challenges with creativity and discipline.
       </p>
       <div className={styles.warsaw42}>
-        <img src={student42} alt="42 Warsaw Photo" />
+        <img src={student42} alt="42 Warsaw" />
       </div>
       <p className={styles.comment}>Graduation day at 42 as a Piscine student</p>
        <p>
@@ -51,48 +51,48 @@ function About() {
       <div className={styles.technologies_container}>
         <div className={styles.tech_type}>
           <div>
-            <img src={typescriptIcon} alt="" />
+            <img src={typescriptIcon} alt="Typescript" />
           </div>
           <p>Typescript</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-            <img src={reactIcon} alt="" />
+            <img src={reactIcon} alt="React Logo" />
           </div>
           <p>React</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-             <img src={nodeIcon} alt="" />
+             <img src={nodeIcon} alt="Node Logo" />
           </div>
           <p>Node.js</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-            <img src={postgresqlIcon} alt="" />
+            <img src={postgresqlIcon} alt="Postgresql Logo" />
           </div>
           <p>PostgreSQL</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-            <img src={gitIcon} alt="" />
+            <img src={gitIcon} alt="Git" />
           </div>
           <p>Git</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-           <img src={expressIcon} alt="" />
+           <img src={expressIcon} alt="Expressjs" />
           </div>
           <p>Express.js</p>
         </div>
         <div className={styles.tech_type}>
           <div>
-           <img src={dockerIcon} alt="" />
+           <img src={dockerIcon} alt="Docker" />
           </div>
           <p>Docker</p>
         </div>  <div className={styles.tech_type}>
           <div>
-            <img src={nestIcon} alt="" />
+            <img src={nestIcon} alt="Nest" />
           </div>
           <p>Nest.js</p>
         </div>
