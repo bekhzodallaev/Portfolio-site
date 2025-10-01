@@ -1,5 +1,5 @@
 import express from "express";
-import type { Request, Response, NextFunction } from "express";
+import type { Request, Response } from "express";
 import sendMail from "../mailer/mailer"
 
 const router = express.Router();
@@ -7,7 +7,6 @@ const router = express.Router();
 router.post("/", async function (
   req: Request,
   res: Response,
-  next: NextFunction
 ): Promise<void> {
   try {
     const { name, email, message } = req.body;
@@ -24,8 +23,5 @@ router.post("/", async function (
   }
 });
 
-router.get("/", (req, res) => {
-  res.send("Contact API is working");
-});
 
 export default router;

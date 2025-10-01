@@ -17,10 +17,11 @@ const sendMail = async ({ name, email, message }: { name: string; email: string;
   });
 
   const mailOptions = {
-    from: email,
+    from: process.env.EMAIL_USER,
+    replyTo:email,
     to: process.env.EMAIL_USER,
     subject: `Message from ${name}`,
-    text: message,
+    text: `From ${name} <${email}>\n\n${message}`,
   };
 
   try {
