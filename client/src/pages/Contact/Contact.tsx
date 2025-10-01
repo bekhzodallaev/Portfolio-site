@@ -27,9 +27,7 @@ function Contact() {
       [e.target.name]:e.target.value
     }))
   }
-  const API_URL = process.env.REACT_APP_API_URL ||
-  "https://portfolio-site-k7n9.onrender.com/api/contact";;
-
+  const API_URL = process.env.REACT_APP_API_URL || "https://portfolio-site-k7n9.onrender.com/api/contact";
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoading(true);
