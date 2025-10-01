@@ -20,16 +20,17 @@ const sendMail = async ({ name, email, message }: { name: string; email: string;
     from: email,
     to: process.env.EMAIL_USER,
     subject: `Message from ${name}`,
-    text: `From ${name} <${email}>\n\n${message}`,
+    text: message,
   };
 
-    return transporter.sendMail(mailOptions, function (err, data){
-    if (err) {
-        console.log(`Error occured: ${err}`);
-    } else {
-        console.log('Email Sent Successfully!');
-    }
-  });
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.response);
+    return info;
+  } catch (err) {
+    console.error('Error sending email:', err);
+    throw err;
+  }
 };
 
 export default sendMail;

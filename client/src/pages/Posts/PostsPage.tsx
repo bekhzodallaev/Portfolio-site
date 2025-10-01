@@ -48,10 +48,6 @@ function PostsPage() {
   if (loading) return <p>Loading post...</p>;
   if (!post) return <p>Post not found</p>;
 
-    console.log("POST DATA FROM API:", post);
-  console.log("Metadata:", post.metadata);
-  console.log("Content:", post.content.substring(0, 300));
-  
   const currentIndex = allPosts.findIndex(p => p.slug === slug);
   const prevPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
   const nextPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
