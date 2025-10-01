@@ -20,7 +20,7 @@ const sendMail = async ({ name, email, message }: { name: string; email: string;
     from: email,
     to: process.env.EMAIL_USER,
     subject: `Message from ${name}`,
-    text: message,
+    text: `From ${name} <${email}>\n\n${message}`,
   };
 
     return transporter.sendMail(mailOptions, function (err, data){

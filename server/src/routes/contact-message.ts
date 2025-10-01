@@ -17,7 +17,7 @@ router.post("/", async function (
       return;
     }
     await sendMail(req.body);
-    res.status(200).json({ message: "Message saved"});
+    res.status(200).json({ message: "Message sent successfully"});
   } catch (err: any) {
      console.log(err);
     res.status(500).json({ error: err.message || "Something went wrong." });
