@@ -24,4 +24,8 @@ router.post("/", async function (
   }
 });
 
+router.get("/", (req, res) => {
+  res.send("Contact API is working");
+});
+
 export default router;
