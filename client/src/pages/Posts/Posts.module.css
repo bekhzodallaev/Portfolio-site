@@ -19,6 +19,8 @@
     gap: 3rem;
     margin: 2rem 0rem;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
 
 }
 .post_links a {

@@ -24,9 +24,15 @@ function loadAllPosts() {
   cachedPosts = files.map(file => {
     const slug = file.replace(".md", "");
     const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
-    const { data } = matter(content);
-
-    cachedPostContents[slug] = { metadata: data as PostMeta, content };
+    const { data, content:cleanContent } = matter(content);
+     
+    console.log("=== DEBUG PARSING ===");
+    console.log("File:", file);
+    console.log("Raw metadata from matter:", data);
+    console.log("Raw content from matter:", cleanContent.substring(0, 200) + "...");
+    console.log("=====================");
+  
+    cachedPostContents[slug] = { metadata: data as PostMeta, content:cleanContent };
 
     return { slug, ...(data as PostMeta) };
   });
