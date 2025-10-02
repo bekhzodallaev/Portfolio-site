@@ -45,7 +45,8 @@ function Contact() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'bekhzodallayev@gmail.com'
+          time:new Date().toLocaleString(),
+          reply_to: formData.email
         },
         EMAILJS_CONFIG.PUBLIC_KEY
       );
