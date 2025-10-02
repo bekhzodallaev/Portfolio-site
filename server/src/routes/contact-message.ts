@@ -23,5 +23,41 @@ router.post("/", async function (
   }
 });
 
+// Add this to your routes for testing
+router.get("/test-email", async (req: Request, res: Response) => {
+  try {
+    console.log('Testing email configuration from Render...');
+    
+    const nodemailer = require('nodemailer');
+    
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    console.log('Attempting connection...');
+    await transporter.verify();
+    console.log('Connection successful!');
+    
+    res.json({ 
+      status: 'success', 
+      message: 'SMTP connection successful',
+      emailUser: process.env.EMAIL_USER ? 'set' : 'missing'
+    });
+    
+  } catch (error: any) {
+    console.error('SMTP test failed:', error);
+    res.status(500).json({ 
+      status: 'error', 
+      message: error.message,
+      code: error.code 
+    });
+  }
+});
 
 export default router;
