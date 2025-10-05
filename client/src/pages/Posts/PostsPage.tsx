@@ -3,6 +3,9 @@ import { useParams, Link } from "react-router-dom";
 import Posts from "./Posts";
 import styles from "./Posts.module.css"
 import telegramGif from "../../assets/blogs/icons8-telegram.gif"
+import { motion } from "framer-motion";
+import PageTitle from "../../components/PageTitle/PageTitle";
+
 
 interface PostData {
   slug: string;
@@ -53,7 +56,14 @@ function PostsPage() {
   const nextPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   return (
-    <div className={styles.postpage_container}>
+    
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate = {{y:0, opacity:1}}
+      transition ={{ duration:0.6, ease:"easeOut"}}
+    >
+     <PageTitle title={post.metadata.title} />
+      <div className={styles.postpage_container}>
       <Posts content={post.content} metadata={post.metadata} />
       <div className={styles.link_wrappper}>
         <p>I am also writing articles, tutorials and some tech-related stuff here on my channel
@@ -78,6 +88,7 @@ function PostsPage() {
         )}
       </div>
     </div>
+    </motion.div>
   );
 }
 

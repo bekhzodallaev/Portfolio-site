@@ -5,7 +5,7 @@ import music from '../../assets/projects/music.jpg'
 import taskManager from '../../assets/projects/taskmanager.jpg'
 import tenzie from '../../assets/projects/tenzie.jpg'
 import { motion } from "framer-motion"
-
+import PageTitle from '../../components/PageTitle/PageTitle'
 function Projects() {
   return (
     <motion.div
@@ -13,6 +13,7 @@ function Projects() {
       animate = {{y:0, opacity:1}}
       transition ={{ duration:0.6, ease:"easeOut"}}
     >
+      <PageTitle title='Projects' />
     <div className={styles.projects_wrapper}>
       <h1>Projects</h1>
       <p>A curated selection of my recent work, highlighting my expertise in software development</p>

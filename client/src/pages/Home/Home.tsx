@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import ProfileImage from '../../assets/Profile.jpg'
 import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
       animate = {{y:0, opacity:1}}
       transition ={{ duration:0.6, ease:"easeOut"}}
     >
-      
+      <PageTitle title='Home - Bekhzod Allaev' />
        <div className={styles.home_wrapper}>
       <div className={styles.parent_wrapper}>
           <div className={styles.left_side}>

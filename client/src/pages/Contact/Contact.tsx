@@ -6,7 +6,7 @@ import telegramLogo from "../../assets/contact/telegram.png";
 import linkedinLogo from "../../assets/contact/linkedin.png";
 import githubLogo from "../../assets/contact/github.png";
 import { motion } from "framer-motion";
-
+import PageTitle from '../../components/PageTitle/PageTitle';
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -75,6 +75,7 @@ function Contact() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+      <PageTitle title='Contact'/>
       <div className={styles.contact_wrapper}>
         <h1>Get in Touch</h1>
         <p>I'm always open to discussing new projects, creative ideas,

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./PostsList.module.css";
 import { motion } from "framer-motion"
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 interface PostMeta {
   slug: string;
@@ -41,6 +42,7 @@ if (loading) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+      <PageTitle title="BlogList" />
        <div className={styles.postlist_wrapper}>
       <h1>All Blogs</h1>
       <ul>

@@ -11,6 +11,7 @@ import nodeIcon from '../../assets/technologies/nodejs.png'
 import internXperi from "../../assets/intern-xperi.jpg"
 import student42 from "../../assets/Student-42.jpg";
 import { motion } from "framer-motion"
+import PageTitle from '../../components/PageTitle/PageTitle'
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+      <PageTitle title='About Me' />
         <div className={styles.about_wrapper}>
       <h1>About Me</h1>
       <p>My name is Bekhzod, a self-taught software engineer from Uzbekistan, currently living in Warsaw, Poland.
