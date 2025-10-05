@@ -9,10 +9,12 @@ import Projects from './pages/Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import PostsPage from './pages/Posts/PostsPage';
 import Footer from './components/Footer/Footer';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 
 function App() {
   return (
-  <div className={styles.App}>
+    <div className={styles.App}>
+      <ProgressBar />
       <Navbar /> {/* Include Navbar at the top level */}
       <main>
          <Routes>

@@ -1,0 +1,14 @@
+/* progress element styling */
+progress.scroll_progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress.scroll_progress::-webkit-progress-value {
+  background-color:#52a4f7;
+  transition: width 0.2s ease-out;
+}
+
+progress.scroll_progress::-moz-progress-bar {
+  background-color:#52a4f7;
+  transition: width 0.2s ease-out;
+}
