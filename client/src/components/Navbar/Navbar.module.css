@@ -232,4 +232,9 @@ nav ul li {
   }
 
 }
+@media screen and (max-width:992px) {
+  .navbar_wrapper {
+    padding: 0 2rem;
+  }
+}
 

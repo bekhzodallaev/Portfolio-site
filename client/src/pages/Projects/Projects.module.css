@@ -100,3 +100,15 @@
     }
 
 }
+
+@media screen and (max-width:992px) {
+    
+    .projects_wrapper {
+        padding: 0rem 2rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .projects_wrapper {
+        padding: 0rem 4rem;
+    }
+}
