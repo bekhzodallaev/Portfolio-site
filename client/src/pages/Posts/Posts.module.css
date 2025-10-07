@@ -44,3 +44,15 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .postpage_container {
+        padding: 2rem;
+    }
+    .posts_container h1{
+      font-size: 28px;
+    }
+    .post_links {
+        font-size: 17px;
+    }
+}

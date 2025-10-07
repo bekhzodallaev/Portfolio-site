@@ -43,6 +43,7 @@
     
     .projects_wrapper {
         padding: 1rem;
+        font-size: 1rem;
     }
     .projects_container{
         flex-direction: column;
@@ -50,6 +51,37 @@
     }
     .projects_wrapper h1 {
         font-size: 24px;
+
+
+    }
+    .image_container {
+        width: 100%;
+    }
+    .project:hover{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        border-radius: 10px;
+    }
+    .project p, .project h3{
+        margin: 1rem;
+    }
+    .project {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projects_wrapper {
+        padding: 1rem;
+        font-size: 17px;
+    }
+    .projects_container{
+        flex-direction: column;
+        gap: none;
+    }
+    .projects_wrapper h1 {
+        font-size: 28px;
 
 
     }

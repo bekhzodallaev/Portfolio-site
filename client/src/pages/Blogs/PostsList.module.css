@@ -63,6 +63,31 @@
  .postlist_wrapper{
     width: 100%;
     padding: 1rem;
+    font-size: 17px;
+
+}
+.postlist_wrapper ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.postlist_wrapper ul li {
+  width: 100%;
+  min-width: unset;
+
+}
+
+.postlist_wrapper h1 {
+  font-size: 24px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .postlist_wrapper{
+    width: 100%;
+    padding: 2rem;
 
 }
 .postlist_wrapper ul {
@@ -74,9 +99,10 @@
   width: 100%;
   min-width: unset;
 }
-
-.postlist_wrapper h1 {
-  font-size: 24px;
+.postlist_wrapper ul li .link p {
+   font-size: 17px;
 }
-
+.postlist_wrapper h1 {
+  font-size: 28px;
+}
 }

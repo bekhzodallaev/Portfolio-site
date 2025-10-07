@@ -105,3 +105,33 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+   
+      .about_wrapper {
+        padding: 2rem;
+        font-size: 17px;
+    }
+    .about_wrapper h1 {
+        font-size: 28px;
+    }
+    .skills_container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .technologies_container {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        gap: 1.5rem;
+        justify-content: space-between;
+    }
+    .skill{
+        padding: 1rem 0.5rem;
+    }
+    .intern_photo {
+        width: 100%;
+    }
+    .warsaw42{
+        width: 100%;
+    }
+}
