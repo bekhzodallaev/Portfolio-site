@@ -128,7 +128,7 @@
 
    .home_wrapper {
         flex-direction: column;
-        padding: 2rem;
+        padding: 1rem;
         height: auto;
         align-items: unset;
     } 

@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 768px) {
     .postpage_container {
-        padding: 2rem;
+        padding: 1rem;
     }
     .posts_container h1{
       font-size: 28px;
@@ -58,11 +58,11 @@
 }
 @media screen and (max-width:992px) {
     .postpage_container{
-        padding: 0rem 2rem;
+        padding: 1rem 2rem;
     }
 }
 @media screen and (max-width:1200px) {
     .postpage_container {
-        padding: 0rem 4rem;
+        padding: 1rem 4rem;
     }
 }

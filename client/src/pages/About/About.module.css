@@ -109,7 +109,7 @@
 @media screen and (max-width: 768px) {
    
       .about_wrapper {
-        padding: 2rem;
+        padding: 1rem;
         font-size: 17px;
     }
     .about_wrapper h1 {
@@ -138,12 +138,12 @@
 
 @media screen and (max-width:992px) {
     .about_wrapper {
-        padding: 0rem 2rem;
+        padding: 1rem 2rem;
     }
 }
 
 @media screen and (max-width:1200px) {
     .about_wrapper {
-        padding: 0rem 4rem;
+        padding: 1rem 4rem;
     }
 }
