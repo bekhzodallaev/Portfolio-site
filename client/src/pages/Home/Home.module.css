@@ -84,7 +84,7 @@
     padding: 0;
 }
 
-@media  screen and (max-width:480px) {
+@media  screen and (max-width:600px) {
   
     .home_wrapper {
         flex-direction: column;

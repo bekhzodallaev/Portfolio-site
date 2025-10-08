@@ -39,7 +39,7 @@
     width: 400px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     
     .projects_wrapper {
         padding: 1rem;
