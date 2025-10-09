@@ -32,16 +32,15 @@
     color: #12538f;
 }
 
-@media screen and (max-width:600px) {
-    
+@media screen and (max-width:1200px) {
     .postpage_container {
-        padding: 1rem;
+        padding: 1rem 4rem;
     }
-    .posts_container h1{
-      font-size: 24px;
-    }
-    .post_links {
-        font-size: 1rem;
+}
+
+@media screen and (max-width:992px) {
+    .postpage_container{
+        padding: 1rem 2rem;
     }
 }
 
@@ -56,13 +55,16 @@
         font-size: 17px;
     }
 }
-@media screen and (max-width:992px) {
-    .postpage_container{
-        padding: 1rem 2rem;
-    }
-}
-@media screen and (max-width:1200px) {
+
+@media screen and (max-width:600px) {
+    
     .postpage_container {
-        padding: 1rem 4rem;
+        padding: 1rem;
+    }
+    .posts_container h1{
+      font-size: 24px;
+    }
+    .post_links {
+        font-size: 1rem;
     }
 }

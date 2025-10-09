@@ -57,6 +57,29 @@
   100% { background-position: -200% 0; }
 }
 
+@media screen and (max-width: 768px) {
+
+  .postlist_wrapper{
+    width: 100%;
+    padding: 1rem;
+
+}
+.postlist_wrapper ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.postlist_wrapper ul li {
+  width: 100%;
+  min-width: unset;
+}
+.postlist_wrapper ul li .link p {
+   font-size: 17px;
+}
+.postlist_wrapper h1 {
+  font-size: 28px;
+}
+}
 
 @media screen and (max-width:600px) {
   
@@ -81,28 +104,4 @@
   font-size: 24px;
 }
 
-}
-
-@media screen and (max-width: 768px) {
-
-  .postlist_wrapper{
-    width: 100%;
-    padding: 1rem;
-
-}
-.postlist_wrapper ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.postlist_wrapper ul li {
-  width: 100%;
-  min-width: unset;
-}
-.postlist_wrapper ul li .link p {
-   font-size: 17px;
-}
-.postlist_wrapper h1 {
-  font-size: 28px;
-}
 }
