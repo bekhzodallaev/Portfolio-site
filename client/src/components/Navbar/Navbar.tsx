@@ -91,7 +91,7 @@ function Navbar() {
 </li>
 
 < li className={styles.download_btn}>
-            <a href="/assets/BekhzodAllaevCV0.pdf" className={styles.link_styles} download>
+            <a href="/assets/Bekhzod_Allaev_CV.pdf" className={styles.link_styles} download>
               <p>Resume</p>
             <img src={downloadIcon} alt="" />
               
