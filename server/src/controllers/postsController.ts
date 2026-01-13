@@ -37,8 +37,18 @@ function loadAllPosts() {
   cachedPosts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
-
+  
+  console.log(
+  cachedPosts.map(p => ({
+    slug: p.slug,
+    date: p.date,
+    dateParsed: new Date(p.date).toISOString(),
+    timestamp: new Date(p.date).getTime()
+  }))
+  );
+  
   console.log(`Loaded ${cachedPosts.length} posts at ${new Date().toISOString()}`);
+
 }
 
 // Initial load

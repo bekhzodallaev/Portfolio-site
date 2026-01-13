@@ -1,6 +1,6 @@
 ---
 title: "Beyond Coding: Staying Relevant in a Fast-Moving Industry"
-date: "2026-01-11"
+date: "2025-01-11"
 ---
 
 Hello everyone.
