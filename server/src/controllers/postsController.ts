@@ -28,7 +28,10 @@ function loadAllPosts() {
      
     cachedPostContents[slug] = { metadata: data as PostMeta, content:cleanContent };
 
-    return { slug, ...(data as PostMeta) };
+    return {
+      slug,
+      ...data,
+    } as PostMeta & {slug : string};
   });
 
   cachedPosts.sort(
