@@ -21,7 +21,7 @@ services:
       context: ./server
       dockerfile: Dockerfile.dev
     ports:
-      - "5000:5000"
+      - "5001:5000"
     volumes:
       - ./server:/app        # mount local server code
       - /app/node_modules

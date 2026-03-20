@@ -67,13 +67,19 @@ export const getAllPosts = (_req: Request, res: Response): void => {
 
 // ✅ Get single post by slug (cached)
 export const getPostBySlug = (req: Request, res: Response): void => {
-  const slug = req.params.slug;
+  const slugParam = req.params.slug;
 
-  const post = cachedPostContents[slug];
+  if (Array.isArray(slugParam)) {
+    res.status(400).json({ error: "Invalid slug" });
+    return;
+  }
+
+  const post = cachedPostContents[slugParam];
+
   if (!post) {
     res.status(404).json({ error: "Post not found" });
     return;
   }
 
-  res.json({ slug, metadata: post.metadata, content: post.content });
+  res.json({ slug: slugParam, metadata: post.metadata, content: post.content });
 };
