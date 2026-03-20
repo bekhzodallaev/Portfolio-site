@@ -151,7 +151,7 @@ function Contact() {
               <img src={githubLogo} alt="Github logo" />
               <span>Github</span>
             </a>
-            <a href="https://t.me/webdevdaily" target='_blank' rel="noreferrer noopener">
+            <a href="https://t.me/daildevguru" target='_blank' rel="noreferrer noopener">
               <img src={telegramLogo} alt="Telegram logo" />
               <span>Telegram</span>
             </a>
