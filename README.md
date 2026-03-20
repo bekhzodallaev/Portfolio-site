@@ -17,7 +17,6 @@ The site showcases my skills, projects, blog posts, and allows visitors to conta
 - **Blog**: My technical posts and tutorials, with interactive code examples  
 - **Contact**: Contact form for visitors to send me messages  
 - **Download CV**: Downloadable PDF of my resume  
-- **Code Runner** (optional): Execute code examples in blog posts (using Piston API or sandbox)
 
 ---
 
@@ -29,7 +28,6 @@ The site showcases my skills, projects, blog posts, and allows visitors to conta
 | Backend    | Node.js, Express, REST API, JWT |
 | Database   | PostgreSQL / MongoDB               |
 | Dev Tools  | Docker (optional), Git, CI/CD pipelines, Vercel/Render |
-| Code Editor| Monaco Editor / CodeMirror (for interactive blog code) |
 
 ---
 
