@@ -47,8 +47,6 @@ function loadAllPosts() {
   }))
   );
   
-  console.log(`Loaded ${cachedPosts.length} posts at ${new Date().toISOString()}`);
-
 }
 
 // Initial load
