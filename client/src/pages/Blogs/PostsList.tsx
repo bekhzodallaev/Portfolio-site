@@ -16,7 +16,7 @@ function PostsList() {
 
   useEffect(() => {
     async function fetchPosts() {
-      const res = await fetch("http://localhost:5001/api/posts");
+      const res = await fetch("https://portfolio-site-k7n9.onrender.com/api/posts");
       const data: PostMeta[] = await res.json();
       setPosts(data);
       setLoading(false);
